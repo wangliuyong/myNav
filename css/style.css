@@ -1,0 +1,62 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+body{
+    height: 100vh;
+    background: rgb(195,198,201) url("../img/background.jpg") no-repeat center center;
+    background-size: cover;
+}
+main{text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-family: -webkit-body;
+    height: 100%;
+}
+main #keyWrapper kbd {
+    text-transform: uppercase;
+    position: relative;
+}
+main #keyWrapper kbd>button {
+    background: red;
+    position: absolute;
+    right: 1px;
+    bottom: 2px;
+    display: none;
+}
+main #keyWrapper kbd:hover > button{display: block;}
+main #keyWrapper kbd >button{background:rgba(50,50,50,0.2);position: absolute;right: 1px;bottom: 2px;border: none;width: 12px;border-radius: 3px;margin-right: 2px;color: #fff;}
+#keyWrapper >div:nth-child(2) {margin-left: 1em;}
+#keyWrapper >div:nth-child(3){margin-left: 2em;}
+main #keyWrapper {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+/*键盘样式*/
+.keyboardStyle{
+    display: inline-block;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    width:50px;
+    height: 40px;
+    border-radius: 6px;
+    color: rgb(190, 190, 190);
+    font-weight: bold;
+    background: linear-gradient(to bottom, #141414 0%, #2d2d2d 100%);
+    box-shadow: 0 0 0 1px rgb(10,10,10),0 0 0 2px rgb(29,29,29),0 2px 0 2px rgb(0,0,0);
+}
+.row{
+    margin: 20px 0;
+}
+.keyboardStyle img{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+}
