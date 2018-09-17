@@ -89,7 +89,7 @@ function creatButton(index2, hash) {
     buttonE.id = index2;
     /* 编辑网址点击事件 */
     buttonE.onclick = function (event) {
-        hash[event.target.id] = prompt("输入您自定义的网址");
+        hash[event.target.id] = prompt("输入您自定义的网址(例如百度：baidu.com)");
         localStorage.setItem(`myKey`, JSON.stringify(hash)); //将hash解析成字符串并存入localStorage，JSON.stringify()将一个数组或者对象转换成JSON字符串。
 
         var index = event.target.id;
